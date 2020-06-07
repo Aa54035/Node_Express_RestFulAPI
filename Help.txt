@@ -1,0 +1,28 @@
+1> First do # npm init
+==========it will create Package.jason file where are all dependancy stored related to project
+========== so if its being downloaded on other machine then need to run
+=========== #npm install to install all dependancy present in Package.jason
+
+2># git init 
+
+so git will be intialiased to save, commit , push local data to remote data then 
+ to push to Git hub repor
+
+3> #npm install express --save
+
+This will install express webbased framework for node js into preject 
+if you have node < 10.* version then (--save) is required so express dependancy will be saved to package jason
+
+4> #npm install --save-dev babel-cli babel-preset-env babel-preset-stage-0
+
+This used to install dev dependancy of babel so it will convert ES6 code to Javascript into runtime
+babel-cli -- its command line tool
+*env       -- main package to convert ES6 TO Javascript
+-stage-0   --  Allow access different package of Es5 / Es 6 
+ stage Zero allow all accecss to all types of ES* version 
+ 
+
+ 5>#npm install body-parser nodemon
+ body-parser to parse jason input / output
+ nodemon to start HTTP server in continous mode so any changes in code , files will be compiled and 
+ server.js will be restarted 
