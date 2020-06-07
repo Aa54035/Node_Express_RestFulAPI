@@ -1,12 +1,12 @@
 {
   "name": "node_express_restfulapi",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is restfull application created using Node, express, babel and Mongo DB",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./server.js --exec babel-node -e js"
   },
-  "author": "",
+  "author": "Ashish pratap pingale",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
