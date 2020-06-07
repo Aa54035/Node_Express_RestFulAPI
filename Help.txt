@@ -26,3 +26,13 @@ babel-cli -- its command line tool
  body-parser to parse jason input / output
  nodemon to start HTTP server in continous mode so any changes in code , files will be compiled and 
  server.js will be restarted 
+
+ 6> Create Structure in source folder for 
+    a>controllers
+    b>model for DB modesl
+    c>Routes for different path hit by user 
+
+  7>now in server.js
+  import routes from './Source/routes/crmRoutes'
+routes(app);  --> pass the express server ref to route app
+  
