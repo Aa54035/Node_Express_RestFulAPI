@@ -62,4 +62,8 @@ $ mongo "mongodb+srv://cluster0-gj0mq.mongodb.net/middleware" --username user --
     ASHISH'S ORG - 2020-05-23 > PROJECT 0 > CLUSTERS>mongoclustor  as contact documents 
 
     12> when calling get method , go to postmann and set Body = none into postmann
-    
+
+    13> To search by specific Mongodb id used
+    Contact.findById(req.params.contactid, (err, contact) => { }
+    this contact id should be same as getrequest
+      app.route('/Contact/:contactid')
