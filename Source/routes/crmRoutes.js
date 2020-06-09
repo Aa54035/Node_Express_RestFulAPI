@@ -1,4 +1,4 @@
-import {AddnewContact} from '../controllers/crmController'
+import {AddnewContact,getNewContact} from '../controllers/crmController'
 
 const routes = (app) => {
     app.route('/Contact')
@@ -9,10 +9,12 @@ const routes = (app) => {
             console.log(`request form is ${req.method}`)
             next();
               //next will excute (req,res)  function  next function 
-        }, (req, res) => {
-            res.send(`Get requests  has been successfull for /contact on 3300 port `);
-                    
-        }
+        }, 
+        // (req, res,next) => {
+        //     res.send(`Get requests  has been successfull for /contact on 3300 port `);
+        //         next();    
+        // },
+        getNewContact
         )
          
         .post(AddnewContact);

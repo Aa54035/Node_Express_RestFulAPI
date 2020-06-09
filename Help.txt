@@ -48,4 +48,18 @@ in path we need to setup /bin path for Mongo shell
 $ mongo "mongodb+srv://cluster0-gj0mq.mongodb.net/middleware" --username user --password user
 
 
-  
+  10> Create endpoint / route for Contact 
+  go to postman , type post request > http://localhost:3300/Contact
+  header = content-type = application/x-www-form-urlencoded
+  Body :
+   "firstName": "kapil",
+    "lastName": "kokane",
+    "email": "kapilaa23232@gmail.com",
+    "company": "hsbc",
+    "phonenumber": 9898988,
+
+    11> This will be saved to mongdb  , login using aa54@yah
+    ASHISH'S ORG - 2020-05-23 > PROJECT 0 > CLUSTERS>mongoclustor  as contact documents 
+
+    12> when calling get method , go to postmann and set Body = none into postmann
+    
