@@ -35,4 +35,17 @@ babel-cli -- its command line tool
   7>now in server.js
   import routes from './Source/routes/crmRoutes'
 routes(app);  --> pass the express server ref to route app
+
+8>now go to clode.mongodb.com  login using ashcapg
+go to clustor > collection > add data > create collection and DB 
+add  netwrok access as anywhere 
+add DB user with all permission
+copy connection url so we can connect Mongo DB using url to API 
+
+9> Connect to mongo DB using CMD / bash 
+first download mongo shell from internet , then paste that into program folder 
+in path we need to setup /bin path for Mongo shell
+$ mongo "mongodb+srv://cluster0-gj0mq.mongodb.net/middleware" --username user --password user
+
+
   
