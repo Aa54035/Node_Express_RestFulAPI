@@ -30,6 +30,8 @@ app.use(bodyparse.json())
 routes(app);
 // pass express app
 
+app.use(express.static('images'));  
+
 app.get('/',(req,res)=>{
     res.send(`node and express server is running on ${port}`);
 })
